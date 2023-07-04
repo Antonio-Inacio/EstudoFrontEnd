@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+
+            background: rgb(9, 0, 128);
+
+            border: 5px solid rgb(42, 165, 168);
+            border-radius: 100%;
+            transition: all 0.2s; /*Quando passar o mouse dentro de 0.5s fz algo*/
+        }
+
+        p.aparecer{
+            display: none;
+            margin: 100px;
+            padding: 30px;
+            top: 100px;
+
+            font-size: 30px;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        div:hover {
+            border-radius: 0%;
+        } 
+
+        div:hover p.aparecer{ /*hover desenvolve uma ação quando passa o mouse emcima*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="aparecer">Sou Foda :]</p>
+    </div>
+</body>
+</html>

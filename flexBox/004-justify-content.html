@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Flex-box</title>
+
+  <style>
+
+    /* 
+    o justify content trabalha o alinhamento dos itens no eixo 'y' (cross Axis)
+    */
+    .flex {
+      display: flex;
+      justify-content: space-between;
+
+      /* flex-end -> manda tudo pro final
+         flex-start -> dxa como default
+         center -> cetraliza no eixo y
+         space-evenly -> dxa espaçamento iguais entre os itens
+         space - around -> dxa espaçamentos iguais nas laterais e nas bordas não
+         space-between -> não deixa espaços na borda e sim entre os itens
+      */
+    }
+
+    .flex .item {
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </main>
+
+</body>
+
+</html>

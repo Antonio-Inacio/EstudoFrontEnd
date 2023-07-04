@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+
+        <style>
+        /*Especificidade: 0.0.0.1*/ 
+        p {
+            color: aqua;
+        }
+
+        /*Especificidade: 0.0.1.1*/
+        .novaCor {
+            color: black;
+        }
+
+        /*Especificidade: 0.1.1.1*/
+        #novaCorId-1,
+        #novaCorId-2 {
+            color: blueviolet;
+        }
+        </style>
+    </head>
+    <body>
+        <p>Txt 1.</p>
+        <p class="novaCor">Txt 2.</p>
+        <p class="novaCor">Txt 3.</p>
+        <p id="novaCorId-1">Txt 4.</p>
+        <p id="novaCorId-2">Txt 5.</p>
+    </body>
+</html>
