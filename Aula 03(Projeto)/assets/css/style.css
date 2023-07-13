@@ -3,15 +3,16 @@
 /*Componentes*/
 @import "./header.css";
 @import "./buttons.css";
+@import "main.css";
 *{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
     text-decoration: none;
     font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
 }
 
 .container{
